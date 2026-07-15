@@ -1,5 +1,9 @@
 # bflb-efuse-tool
 
+```
+pip install bflb-efuse-tool
+```
+
 Dump and modify efuse files extracted from BouffaloLabs chips so they can be programmed back.
 
 The files can be extracted using
@@ -11,7 +15,7 @@ For instance, after switching the chip to bootloader mode, extract an efuse file
 ./BLFlashCommand-ubuntu --chipname bl616 --efuse --read --start 0x00 --end 0x200 --file efuse_bl616.bin
 ```
 
-Then move JTAG from pins 1 2 3 4 to pins 16 17 18 19:
+Then move JTAG from pins 0, 1, 2, 3 to pins 16 (TMS), 17 (TCK), 18 (TDO), 19 (TDI):
 
 ```
 bflb-efuse-tool --chip bl616 --in-file efuse_bl616.bin --out-file efuse_bl616_modified.bin --set jtag_cfg=3
