@@ -741,10 +741,10 @@ bl808_efuse_cfg_keys = {
 efuse_data = {
     "bl602": {"cfg": bl602_efuse_cfg_keys, "size": 128},
     "bl616": {"cfg": bl616_efuse_cfg_keys, "size": 512},
-    "bl616cl": {"cfg": bl616_efuse_cfg_keys, "size": 512},
+    "bl616cl": {"cfg": bl616cl_efuse_cfg_keys, "size": 512},
     "bl702": {"cfg": bl702_efuse_cfg_keys, "size": 128},
     "bl702l": {"cfg": bl702l_efuse_cfg_keys, "size": 128},
-    "bl808": {"cfg": bl808_efuse_cfg_keys, "size": 128},
+    "bl808": {"cfg": bl808_efuse_cfg_keys, "size": 256},
 }
 
 
